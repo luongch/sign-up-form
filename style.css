@@ -5,6 +5,10 @@
 html, body {
     margin: 0;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .background-image {
@@ -46,7 +50,9 @@ html, body {
 
 .main {
     display: flex;
-    height: 100%;
+    height: max(600px, 95%);
+    width: clamp(600px, 80%, 100%);
+    background-color: white;
 }
 
 .userName, .userInfo, .userPassword {
