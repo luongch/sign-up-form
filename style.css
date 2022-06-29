@@ -19,7 +19,7 @@ html, body {
 }
 
 .logoContainer {
-    height: 14rem;
+    height: 9rem;
     display: flex;
     background-color: rgba(0,0,0, 0.3);
     margin-top: 14rem;
@@ -30,9 +30,9 @@ html, body {
 .logo {
     background-image: url(./resources/odin-lined.png);
     background-repeat: no-repeat;
-    background-size: 10rem;
-    height: 14rem;
-    width: 10em;
+    background-size: 6rem;
+    height: 8rem;
+    width: 6em;
 }
 
 .mainTitle {
@@ -48,14 +48,13 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #f9fafc;
 }
 
 .main {
     display: flex;
     height: max(600px, 95%);
-    width: clamp(600px, 80%, 100%);
+    width: clamp(600px, 75%, 100%);
     background-color: white;
 }
 
@@ -72,21 +71,26 @@ html, body {
 }
 
 .top {
-    justify-content: space-evenly;
+    flex: 4;
+    justify-content: center;
 }
-.top > p, legend {
+.bottom {
+    flex: 7;
+}
+
+.topContent, .formContent, .bottomForm {
+    padding: 25px 50px;
+}
+.topContent > p, legend {
     font-size: 24px;
     font-weight:600;
-    
-
 }
 
 .create {
     display: inline-block;
 }
 
-
-.bottom {
+.bottomForm {
     padding-top: 2em;
     height: 100%;
     width: 100%;
@@ -94,7 +98,7 @@ html, body {
     flex-direction: column;
 }
 
-.container .bottom {
+.container .bottomForm {
     align-items: flex-start;
 }
 
@@ -105,9 +109,11 @@ form {
     width: 100%;
 }
 
-.top, .bottom {
-    background-color: #f9fafc;
+.formContainer {
+    background-color: white;
+    width: 100%;
 }
+
 
 .btn {
     background-color: #596D48;
@@ -116,10 +122,6 @@ form {
     padding: 10px 40px;
     border: none;
     border-radius: 3px;
-}
-.container {
-    padding-left: 50px;
-    padding-right: 50px
 }
 
 input, label{
@@ -130,20 +132,12 @@ input, label{
 
 label {
     width: 100%;
-    /* padding-left: 50px; */
-    
 }
 
 input {
     width: 250px;
 
 }
-/* 
-.userName > div:last-of-type {
-    input:last-of-type {
-        margin-left: 50px;    
-    }
-} */
 
 .userName > div:last-of-type > input:last-of-type {
     margin-left: 50px;
@@ -151,4 +145,26 @@ input {
 
 .userName > div:last-of-type > label:last-of-type {
     margin-left: 50px;
+}
+
+
+.userInfo > div:last-of-type > input:last-of-type {
+    margin-left: 50px;
+}
+
+.userInfo > div:last-of-type > label:last-of-type {
+    margin-left: 50px;
+}
+
+
+.userPassword > div:last-of-type > input:last-of-type {
+    margin-left: 50px;
+}
+
+.userPassword > div:last-of-type > label:last-of-type {
+    margin-left: 50px;
+}
+
+.userInfo, .userName, .userPassword {
+    padding-top: 25px;
 }
