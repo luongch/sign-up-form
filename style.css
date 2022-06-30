@@ -112,6 +112,7 @@ form {
 .formContainer {
     background-color: white;
     width: 100%;
+    box-shadow: 0px 3px 3px #939e8c;    
 }
 
 
@@ -119,9 +120,11 @@ form {
     background-color: #596D48;
     color: white;
     font-weight: bold;
-    padding: 10px 40px;
+    font-size: large;
+    padding: 15px 60px;
     border: none;
-    border-radius: 3px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px #939e8c;
 }
 
 input, label{
