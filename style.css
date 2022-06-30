@@ -147,6 +147,18 @@ input {
 
 }
 
+input {
+    border-color: #E5E7EB;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+  }
+  
+input:focus {
+border-color: blue;
+}
+
 .userName > div:last-of-type > input:last-of-type {
     margin-left: 50px;
 }
