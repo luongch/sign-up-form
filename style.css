@@ -127,6 +127,11 @@ form {
     box-shadow: 3px 3px 3px #939e8c;
 }
 
+.login {
+    padding-top: 3rem;
+    font-size: large;
+}
+
 input, label{
     -webkit-appearance: none;
     appearance: none;
