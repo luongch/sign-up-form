@@ -161,6 +161,10 @@ input:focus {
     border-radius: 5px;
 }
 
+.a:link, a:visited {
+    color: #596D48;
+}
+
 .userName > div:last-of-type > input:last-of-type {
     margin-left: 50px;
 }
