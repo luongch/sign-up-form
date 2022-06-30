@@ -156,7 +156,9 @@ input:invalid:not(:focus):not(:placeholder-shown) {
   }
   
 input:focus {
-border-color: blue;
+    border-color: blue;
+    box-shadow: 1px 1px 1px #939e8c;
+    border-radius: 5px;
 }
 
 .userName > div:last-of-type > input:last-of-type {
