@@ -82,8 +82,11 @@ html, body {
     padding: 25px 50px;
 }
 .topContent > p, legend {
-    font-size: 24px;
+    font-size: 27px;
     font-weight:600;
+}
+.topContent {
+    width: clamp(650px, 50%, 800px);
 }
 
 .create {
@@ -153,11 +156,14 @@ input {
 
 input:invalid:not(:focus):not(:placeholder-shown) {
     border-color: red;
+    box-shadow: 2px 2px 2px #939e8c;
+    border-radius: 5px;
   }
   
 input:focus {
+    outline: none !important;
     border-color: blue;
-    box-shadow: 1px 1px 1px #939e8c;
+    box-shadow: 2px 2px 2px #939e8c;
     border-radius: 5px;
 }
 
